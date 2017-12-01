@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Baleric Islands</title>
+  <link rel="stylesheet" href="./css/lake.css">
+  </head>
+  <body> 
+      
+     <header>
+      <div class="container">
+          <h1 class="logo"></h1>
+    
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <header id="top" class="main-header">
+    <span class="title">Journey Through the Balearic Islands</span>
+      <h1>Palma De Mallorca, Spain</h1>
+     
+    </header>
+    
+		<div class="primary-content t-border">
+			<p class="intro">
+				The Balearic Islands are an archipelago off eastern Spain, in the Mediterranean. Mallorca (Majorca), the largest island, is known for its beaches, scenic coastline and the Serra de Tramuntana mountains (Cap de Formentor, Fromentor) to the north. Palma, the capital city, is known for its Gothic cathedral with an altar canopy by modern architect Antoni Gaudí, and Almudaina, a classic royal palace.
+			</p>
+			
+      
+      <div class="moody">
+        <h2 id="about" class="">About My Journey</h2>
+        <p>
+          Welcome to to my page, my name is Hugo and I am currently a freelance photographer and web develoer. This page this is based one of my traveller blog where I am going focus on Palma De Mallorca of of the Baleric Islands which this blog is all about my 1 week journey with my photographer partner Jonathan Doku where we have always looking for a summer photography type of holiday in order to enjoy the meaning of nature. Other than that we have explored mainly the south-east and north to explore moutainscapes and rocky beach. I highly recommand to go the south east if you are looking for relax and chill holiday, you can also get some breath-taking images of lanscape and sunset photograhpy near the cliff and the north part in Town De Soller, for more photos or information, be sure to check out my <a href="#mink">instagram</a>
+        </p>
+      </div><!-- End .wildlife -->
+      <a href="#" id="about" class="button">Find Out More</a>
+		</div><!-- End .primary-content -->
+
+		<div class="secondary-content t-border group"> 
+      <div class="sunset">
+        <img src="images/sunset.jpg" alt="sunset">
+        <h3>Where the get the best out of Mallorca</h3>
+        <p>
+          Mallorca is an amazing place for an affordable holiday destination whether you are with family or friends. To get around the island as it's the biggest out of all the baleric island, you should really think about renting a car as it's really affordable there to rent a car for a week. Here is full list of places that you defintely should check out. Here are my top three destination.:
+        </p>
+        <ul>
+          <li> Cap de Formentor, Fromentor</li>
+          <li> Torrent de Cala Pi (in south east)</li>
+          <li>Bullimoto Port Sóller, Soller</li>
+        </ul>		
+      </div>
+      </div>
+      
+      <div class="secondary-content t-border group">
+        <div class="moody">
+        <img src="images/moody.jpg" alt="moody">
+        <h3>Pack Accordingly</h3>
+        <p>
+          One of most important things when it comes to traveling through the great outdoors is packing accordingly. Here are a few tips:
+        </p>
+        <ol>
+          <li>Bring layers of clothing</li>
+          <li>Pack sunscreen</li>
+          <li>Carry extra water just in case</li>
+          <li>Pack light</li>
+        </ol>
+      </div>
+    </div> 
+    <!-- End .secondary-content -->
+    
+    <h3 id="gallery">Balearic Islands's Gallery</h3>
+    
+    
+      
+      <div class="container">
+        <div class="item">
+            <img src="images/summer0.jpg"/>
+       </div>
+        <div class="item">
+           <img src="images/summer6.jpg"/>
+       </div>
+        <div class="item">
+           <img src="images/summer1.jpg"/>
+       </div>
+        <div class="item">
+            <img src="images/summer2.jpg"/>
+        </div>
+        <div class="item">
+            <img src="images/summer3.jpg"/>
+        </div>
+        <div class="item">
+            <img src="images/summer4.jpg"/>
+        </div>
+        <div class="item">
+           <img src="images/summer5.jpg"/>
+        </div>
+        <div class="item">
+           <img src="images/leo.jpg"/>
+        </div>
+        <div class="item">
+          <img src="images/summer7.jpg"/>
+          </div>
+        <div class="item">
+            <img src="images/summerset.jpg"/>
+          </div>
+      </div>
+
+      <div class="wrapper">
+      <h2 id="contact" class="contact">Contacts and Subscribe</h2>
+      <p>I'd love your feedback!</p>
+      <input type="text" name="" id="" 
+      placeholder="Enter Your Name">
+      <input type="email" name="" id="" 
+      placeholder="Enter Your Email">
+      <input type="" name="" id="" 
+      placeholder="Enter Your Phone Number">
+      <textarea name="" id="" cols="30" rows="10"
+        placeholder="Type Your Message Here" >
+      </textarea>
+      <a href="#">Submit</a>
+    </div>
+    
+      
+
+
+
+
+
+    <div id="popup">
+      <div id="x" >X</div>
+      <img id="popupImage" src="" alt="">
+    </div>
+
+    <script>
+      // close the picture
+      document.getElementById("x").addEventListener("click",function(){
+        document.getElementById("popup").style.display = "none"
+      })
+
+      // make the pictures in the photo gallery pop up
+      var items = document.getElementsByClassName("item")
+
+      for(i=0;i<items.length;i++){
+        items[i].addEventListener("click", function(e){
+          document.getElementById("popup").style.display = "inline";
+          document.getElementById("popupImage").src = e.srcElement.src
+        })
+      }
+
+      document.getElementById("x").addEventListener("click",function(){
+        document.getElementById("popup").style.display = "none"
+      })
+
+      // make the  sunset picture pop up
+      var sunset = document.getElementsByClassName("sunset")
+
+      for(i=0;i<sunset.length;i++){
+        sunset[i].addEventListener("click", function(e){
+          document.getElementById("popup").style.display = "inline";
+          document.getElementById("popupImage").src = e.srcElement.src
+        })
+      }
+
+      // make the  sunset picture pop up
+      var moody= document.getElementsByClassName("moody")
+
+      for(i=0;i<moody.length;i++){
+        moody[i].addEventListener("click", function(e){
+          document.getElementById("popup").style.display = "inline";
+          document.getElementById("popupImage").src = e.srcElement.src
+        })
+      }
+
+
+
+    </script>
+
+
+     <footer class="main-footer">
+			<p>All rights reserved to the state of <a href="#">Baleric Islands</a>.</p>
+			<a href="#top">Back to top &raquo;</a>
+		</footer>
+  </body>
+</html>
